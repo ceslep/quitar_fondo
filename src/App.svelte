@@ -117,7 +117,7 @@
           <img
             src={originalUrl}
             alt="Procesando"
-            class="block w-full h-auto opacity-40"
+            class="block w-full h-auto max-h-[70dvh] object-contain opacity-40"
           />
           <div class="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-[2px]">
             <div class="w-full px-10">

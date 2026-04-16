@@ -30,7 +30,7 @@
 
 <div
   bind:this={container}
-  class="relative w-full rounded-2xl overflow-hidden select-none cursor-col-resize touch-none"
+  class="relative w-full max-h-[75dvh] rounded-2xl overflow-hidden select-none cursor-col-resize touch-none"
   onpointerdown={handlePointerDown}
   onpointermove={handlePointerMove}
   onpointerup={handlePointerUp}
@@ -43,7 +43,7 @@
 >
   <!-- Result (background — checkerboard for transparency) -->
   <div class="checkerboard w-full">
-    <img src={resultUrl} alt="Sin fondo" class="block w-full h-auto" draggable="false" />
+    <img src={resultUrl} alt="Sin fondo" class="block w-full h-auto max-h-[75dvh] object-contain" draggable="false" />
   </div>
 
   <!-- Original (clipped overlay) -->
@@ -54,7 +54,7 @@
     <img
       src={originalUrl}
       alt="Original"
-      class="block w-full h-auto"
+      class="block w-full h-auto max-h-[75dvh] object-contain"
       style:min-width="0"
       style:width="{container ? container.offsetWidth + 'px' : '100%'}"
       draggable="false"
